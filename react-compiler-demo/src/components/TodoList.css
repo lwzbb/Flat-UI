@@ -1,0 +1,133 @@
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.todo-list h2 {
+  margin-top: 0;
+  color: #667eea;
+}
+
+.hint {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.todo-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 0.8em;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1em;
+}
+
+.todo-input button {
+  padding: 0.8em 1.5em;
+  background: #667eea;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.todo-input button:hover {
+  background: #5568d3;
+}
+
+.todo-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9em;
+}
+
+.todo-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-items li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.todo-items li:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.todo-items li.completed {
+  opacity: 0.6;
+}
+
+.todo-items li.completed .todo-text {
+  text-decoration: line-through;
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left;
+}
+
+.delete-btn {
+  padding: 0.4em 0.8em;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 4px;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+@media (prefers-color-scheme: light) {
+  .todo-list {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .todo-input input {
+    background: white;
+    color: #213547;
+    border-color: #ccc;
+  }
+  
+  .todo-items li {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-items li:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}

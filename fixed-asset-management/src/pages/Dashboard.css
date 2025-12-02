@@ -1,0 +1,53 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #1890ff;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.stats-row {
+  margin-bottom: 16px;
+}
+
+.charts-row {
+  margin-bottom: 16px;
+}
+
+.table-row {
+  margin-bottom: 16px;
+}
+
+.chart-card {
+  height: 100%;
+}
+
+.chart-card .ant-card-body {
+  padding: 16px;
+}
+
+.table-card .ant-card-body {
+  padding: 16px;
+}
+
+/* 统计卡片样式 */
+.ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.ant-statistic-content {
+  font-size: 20px;
+  font-weight: 600;
+}

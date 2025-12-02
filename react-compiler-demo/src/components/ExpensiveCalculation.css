@@ -1,0 +1,100 @@
+.expensive-calculation {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.expensive-calculation h2 {
+  margin-top: 0;
+  color: #667eea;
+}
+
+.hint {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.calculation-group {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.input-group input {
+  width: 100%;
+  max-width: 200px;
+  padding: 0.6em;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1em;
+}
+
+.result {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-size: 1.1em;
+  color: #4ade80;
+}
+
+.other-state {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.other-state p {
+  margin: 0.5rem 0;
+}
+
+.note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #888;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: light) {
+  .expensive-calculation {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-group input {
+    background: white;
+    color: #213547;
+    border-color: #ccc;
+  }
+  
+  .input-group label {
+    color: #666;
+  }
+  
+  .result {
+    background: rgba(0, 0, 0, 0.05);
+    color: #059669;
+  }
+}

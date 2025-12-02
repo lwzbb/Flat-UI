@@ -1,0 +1,94 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 2rem;
+  font-size: 1.1em;
+}
+
+.demo-selector {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.demo-selector button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.demo-selector button:hover {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.demo-selector button.active {
+  border-color: #667eea;
+  background: #667eea;
+  color: white;
+}
+
+.demo-content {
+  min-height: 400px;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: #667eea;
+}
+
+.info-card ul {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.info-card li {
+  margin: 0.5rem 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .demo-selector button {
+    border-color: #ccc;
+    color: #213547;
+  }
+  
+  .demo-selector button:hover {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+  }
+  
+  .info-card {
+    background: rgba(102, 126, 234, 0.05);
+    border-color: rgba(102, 126, 234, 0.2);
+  }
+}
