@@ -1,0 +1,9 @@
+# Skill 系统依赖
+
+# PaddleOCR 相关
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+
+# 可选：如果需要更好的性能
+# opencv-python>=4.8.0
+# numpy>=1.21.0
